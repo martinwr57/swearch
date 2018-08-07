@@ -1,0 +1,22 @@
+
+IndexTest
+    test_basic_indexing                                          [32mOK  [0m
+    test_basic_updating                                          [32mOK  [0m
+    test_flapping                                                [32mOK  [0m
+    test_metadata_search                                         [32mOK  [0m
+    test_prefix_search                                           [32mOK  [0m
+    test_search_by_container                                     [32mOK  [0m
+    test_search_by_container_space_extension                     [32mOK  [0m
+    test_search_by_content_type                                  [32mOK  [0m
+    test_search_by_path                                          [32mOK  [0m
+
+Slowest 5 tests took 42.93 secs:
+[31m    12.39    IndexTest.test_basic_updating[0m
+[31m    8.52    IndexTest.test_basic_indexing[0m
+[31m    8.35    IndexTest.test_metadata_search[0m
+[31m    6.89    IndexTest.test_flapping[0m
+[31m    6.79    IndexTest.test_search_by_content_type[0m
+----------------------------------------------------------------------
+Ran 9 tests in 69.040s
+
+OK

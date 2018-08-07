@@ -1,0 +1,6 @@
+pika>=0.9.13
+pyes>=0.90.1
+python-swiftclient
+requests>=2.0.0
+simplejson
+softlayer-object-storage

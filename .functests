@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SRC_DIR=$(python -c "import os; print os.path.dirname(os.path.realpath('$0'))")
+
+cd ${SRC_DIR}/tests/functional
+nosetests --exe $@ 2>&1 | tee joseph_swearch_logs 
+rvalue=$?
+cd -
+
+exit $rvalue

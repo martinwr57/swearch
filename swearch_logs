@@ -1,0 +1,212 @@
+
+IndexTest
+    test_basic_indexing                                          [31mERROR[0m[32m  0.08[0m
+    test_basic_updating                                          [31mERROR[0m[32m  0.00[0m
+    test_flapping                                                [34mSKIP[0m
+    test_metadata_search                                         [31mERROR[0m[32m  0.00[0m
+    test_prefix_search                                           [31mERROR[0m[32m  0.00[0m
+    test_search_by_container                                     [31mERROR[0m[32m  0.00[0m
+    test_search_by_container_space_extension                     [31mERROR[0m[32m  0.00[0m
+    test_search_by_content_type                                  [31mERROR[0m[32m  0.00[0m
+    test_search_by_path                                          [31mERROR[0m[32m  0.00[0m
+
+======================================================================
+ERROR: test_basic_indexing (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_basic_updating (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_metadata_search (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_prefix_search (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_search_by_container (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_search_by_container_space_extension (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_search_by_content_type (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+======================================================================
+ERROR: test_search_by_path (tests.functional.index_test.IndexTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/swearch/tests/functional/index_test.py", line 60, in setUp
+    username, api_key, auth_url=auth_url)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 21, in get_client
+    return get_httplib2_client(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/__init__.py", line 41, in get_httplib2_client
+    conn = AuthenticatedConnection(auth)
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 31, in __init__
+    self.auth.authenticate()
+  File "/usr/local/lib/python2.7/dist-packages/object_storage/transport/httplib2conn.py", line 89, in authenticate
+    res, content = http.request(self.auth_url, 'GET', headers=headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1569, in request
+    (response, content) = self._request(conn, authority, uri, request_uri, method, body, headers, redirections, cachekey)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1316, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 1251, in _conn_request
+    conn.connect()
+  File "/usr/lib/python2.7/dist-packages/httplib2/__init__.py", line 912, in connect
+    raise socket.error, msg
+error: [Errno 111] Connection refused
+
+Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+swearch                 14      9    36%   9-20
+swearch.middleware       0      0   100%   
+swearch.utils           25     19    24%   7-10, 15-18, 23-24, 28-43
+--------------------------------------------------
+TOTAL                   39     28    28%   
+nose.plugins.cover: ERROR: TOTAL Coverage did not reach minimum required: 100%
